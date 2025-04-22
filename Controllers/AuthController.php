@@ -24,12 +24,12 @@ class AuthController
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $usernameOrEmail = $_POST['username_or_email'];
             $password = $_POST['password'];
-
+    
             $usuarioData = $this->usuarioModel->getUserByNombreUsuarioOrEmail($usernameOrEmail);
-
+    
             if ($usuarioData && password_verify($password, $usuarioData['contrasena'])) {
                 session_start();
-                $_SESSION['usuario_id'] = $usuarioData['id'];
+                $_SESSION['usuario_id'] = $usuarioData['nombreUsuario']; // Usar nombreUsuario como ID de sesión (ya que es PK)
                 $_SESSION['nombre_usuario'] = $usuarioData['nombreUsuario'];
                 header('Location: index.php?accion=listar_articulos');
                 exit();
