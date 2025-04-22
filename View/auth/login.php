@@ -31,7 +31,7 @@
             </div>
             <div>
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="contrasena" name="contrasena" required>
             </div>
             <button type="submit">Iniciar Sesión</button>
         </form>

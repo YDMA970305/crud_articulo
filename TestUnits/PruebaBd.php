@@ -23,4 +23,6 @@ if ($conn) {
     echo "No se pudo establecer la conexión a la base de datos. Revisa la configuración en Libs/Database.php.";
 }
 
+
+
 ?>

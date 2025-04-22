@@ -23,7 +23,7 @@ class AuthController
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $usernameOrEmail = $_POST['username_or_email'];
-            $password = $_POST['password'];
+            $password = $_POST['contrasena'];
     
             $usuarioData = $this->usuarioModel->getUserByNombreUsuarioOrEmail($usernameOrEmail);
     
