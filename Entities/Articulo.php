@@ -1,4 +1,5 @@
 <?php
+
 namespace Entities;
 
 class Articulo
@@ -127,6 +128,4 @@ class Articulo
     {
         $this->nombreUsuario = $nombreUsuario;
     }
-
 }
-?>

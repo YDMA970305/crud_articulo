@@ -7,7 +7,7 @@ $conn = $db->getConnection();
 
 if ($conn) {
     echo "¡Conexión a la base de datos exitosa!";
-    // Puedes realizar alguna operación de prueba aquí, como una consulta simple
+    
     try {
         $result = $conn->query("SELECT 1");
         if ($result) {
