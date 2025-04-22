@@ -34,8 +34,9 @@ class ArticuloModel
                 $row['descripcion'],
                 $row['nombreUsuario']
             );
-            return $articulos;
+           
         }
+        return $articulos;
     }
     public function getArticuloById($idArticulo)
     {
